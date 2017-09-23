@@ -58,7 +58,9 @@ module Basics =
     let pow2_10 = 2.0 --> 10.0
     let pow2_10_1 = (-->) 2.0 10.0
    
-
+   // params
+   let max ([<ParamArray>] arr: int[]) = 
+        Array.max arr
     
 
 

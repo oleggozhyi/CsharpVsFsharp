@@ -2,7 +2,7 @@
 
     // ---------- Types -----------------
 
-    // tuple
+    // tuple (aka Product Type)
     let tuple = (1,2)
     let (x1,x2) = tuple
 
@@ -29,3 +29,16 @@
     let areEqual = x = y // true
 
     let copy = { x with Phone = Some "097 100 10 10"}
+
+    // Discriminated union (aka Sum Type)
+    type Shape = 
+        | Circle of int
+        | Rectangle of int * int 
+        | Dot
+     
+     // Alias
+     type Calculation = int -> int
+
+     let calcAndPrint (f: Calculation) x = 
+        x |> f 
+          |> printfn "%d"

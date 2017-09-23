@@ -56,6 +56,9 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Syntax\Basics.fs" />
+    <Compile Include="Syntax\Types.fs" />
+    <Compile Include="Syntax\Oop.fs" />
+    <Compile Include="Syntax\PatternMatching.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
