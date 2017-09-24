@@ -9,7 +9,7 @@ module Basics =
     open System.Security.Cryptography.X509Certificates
 
 // ------ Value ----------------
-    let date = DateTime(2001, 2, 3)
+    let date = new DateTime(2001, 2, 3)
     let anInt = 1
     let anotherInt: int = 1
 

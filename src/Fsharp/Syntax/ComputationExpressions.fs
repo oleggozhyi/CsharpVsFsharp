@@ -1,8 +1,8 @@
 ﻿module ComputationExpressions
     // In FP, you should not be throwing exceptions 
-    type Result<'a> =
+    type Result<'a,'b> =
         | Success of 'a
-        | Failure of string
+        | Failure of 'b
     type Email = Email of string
     type User = { Id: int option; Name: string; Email: Email }
 

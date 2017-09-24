@@ -10,6 +10,7 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
+            var vasya = SaveNewUserService.SaveNewUser("Vasya", "v@gmail.com");
         }
     }
 }
