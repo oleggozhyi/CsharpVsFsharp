@@ -39,6 +39,7 @@ module Basics =
         let square = x * x
         printfn "%d" square
     
+
     // Functional composition
 
     let square x = x * x
@@ -58,20 +59,7 @@ module Basics =
     let pow2_10 = 2.0 --> 10.0
     let pow2_10_1 = (-->) 2.0 10.0
    
-   // params
-   let max ([<ParamArray>] arr: int[]) = 
-        Array.max arr
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
+    let rec factorial n = match n with
+        | 0 | 1 -> 1
+        | x ->  n * factorial (n-1) 
+    let (!) = factorial

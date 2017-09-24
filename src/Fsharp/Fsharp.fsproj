@@ -58,7 +58,10 @@
     <Compile Include="Syntax\Basics.fs" />
     <Compile Include="Syntax\Types.fs" />
     <Compile Include="Syntax\Oop.fs" />
-    <Compile Include="Syntax\PatternMatching.fs" />
+    <Compile Include="Syntax\StandardModules.fs" />
+    <Compile Include="Syntax\UnitOfMeasure.fs" />
+    <Compile Include="Syntax\Patterns.fs" />
+    <Compile Include="Syntax\ComputationExpressions.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />

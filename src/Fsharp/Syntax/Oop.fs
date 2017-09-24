@@ -6,16 +6,26 @@
     let x = "123".ToInt()
 
     // Class
+
+    type IHaveName = 
+        abstract GetName: unit -> string
+
+    [<AbstractClass>]
+    type Shape() = 
+            abstract Area: unit -> int
+
     type Rectangle(x:int, y:int) =
-        class 
-            static member Create(x,y) = Rectangle(x = x, y = y)   
+        inherit Shape()
 
-            member this.Area() = x * y 
+        static member Create(x,y) = Rectangle(x = x, y = y)   
+        override this.Area() = x * y 
 
-            member this.Sum 
-                with get() = x + y
-                and set(a: int) = a |> ignore
-        end
+        member this.Sum 
+            with get() = x + y
+            and set(a: int) = a |> ignore
+
+        interface IHaveName with 
+            override x.GetName() = "rectangle"
 
     
 
