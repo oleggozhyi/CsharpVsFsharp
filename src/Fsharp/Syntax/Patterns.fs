@@ -11,9 +11,9 @@
 
      //match on discriminated union
     type Shape =
-        | Circle of float
-        | Rectangle of float*float
-        | Square  of float
+        | Circle of radius: float
+        | Rectangle of width: float * heihgt: float
+        | Square  of width: float
     let area shape =
         match shape with 
         | Circle radius -> System.Math.PI * radius * radius

@@ -39,8 +39,8 @@
 
     // Discriminated union (aka Sum Type)
     type Shape = 
-        | Circle of int
-        | Rectangle of int * int 
+        | Circle of radius: int
+        | Rectangle of width: int * height: int 
         | Dot
      
      // Alias
