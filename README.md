@@ -26,5 +26,13 @@
    * Pattern matching
 9. Computation expressions
 
+## Thinking functionally
 
+1. Notion of math function
+2. Functional techniques
+    * Functiion as a value
+    * Higher order functions
+    * Functional composition
+    * Partial application
+ 3. Functional decomposition
 
